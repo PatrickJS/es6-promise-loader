@@ -1,6 +1,6 @@
 {
   "name": "es6-promise-loader",
-  "version": "1.0.0",
+  "version": "1.0.1",
    "author": "Patrick Stapleton <patrick@angularclass.com>",
   "description": "a webpack bundle-loader with ES6 promise interface",
   "repository": {

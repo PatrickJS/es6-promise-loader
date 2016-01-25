@@ -18,10 +18,6 @@ module.exports.pitch = function (remainingRequest) {
 
   bundleName = bundleName.replace(/\[filename\]/g, filename).replace(/\[name\]/g, name);
 
-  if (!promiseLib) {
-    throw new Error('You need to specify your Promise library of choice, e.g. require("promise?bluebird!./file.js")');
-  }
-
   var result = [
     'module.exports = function (namespace) {\n',
     '  return new Promise(function (resolve) {\n',
