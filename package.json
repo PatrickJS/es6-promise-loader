@@ -1,0 +1,16 @@
+{
+  "name": "es6-promise-loader",
+  "version": "1.0.0",
+   "author": "Patrick Stapleton <patrick@angularclass.com>",
+  "description": "a webpack bundle-loader with ES6 promise interface",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gdi2290/es6-promise-loader.git"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/mit-license.php"
+    }
+  ]
+}
