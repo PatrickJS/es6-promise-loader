@@ -12,7 +12,7 @@ module.exports = function () {};
 module.exports.pitch = function (remainingRequest) {
   this.cacheable && this.cacheable();
   var query = this.query.substring(1).split(','),
-    bundleName = query[1] || '';
+    bundleName = query[0] || '';
   var filename = path.basename(remainingRequest);
   var name = path.basename(remainingRequest, path.extname(filename));
 
