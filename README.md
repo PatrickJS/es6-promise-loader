@@ -9,10 +9,7 @@ It only implements so-called `lazy` `bundle-loader` mode—that is, `require` re
 
 `require: (string) -> () -> Promise<module>`
 
-It's up to you to specify your Promise library of choice as a parameter.
-
 ``` javascript
-// Assuming you use Bluebird
 var load = require("es6-promise!./file.js");
 
 // The chunk is not requested until you call the load function
@@ -30,8 +27,6 @@ load(namespace).then(function(file) {
     }
 ```
 
-If a promise library is already loaded externally you can specify 'global'.
-
 
 You can optionally specify [a name for your chunk](http://webpack.github.io/docs/code-splitting.html#named-chunks) after a comma:
 
@@ -46,7 +41,7 @@ The bundle name may include `[filename]`, which will be replaced with the filena
 ```javascript
 {
   test: /\.i18n\.json$/,
-  loader: 'es6-promise?global,[name].i18n'
+  loader: 'es6-promise?[name].i18n'
 }
 ```
 
